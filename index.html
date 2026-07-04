@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Elvis Chukwuemeka - Frontend Web Developer & IT Student. Building fast, responsive, and modern web experiences.">
+    <title>Elvis Chukwuemeka | Frontend Developer</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ═══════════════ Preloader ═══════════════ -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-ring">
+            <span class="preloader-logo">EC</span>
+            <svg class="preloader-spinner" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="var(--border)" stroke-width="2" />
+                <circle cx="50" cy="50" r="42" fill="none" stroke="url(#goldGradient)" stroke-width="2"
+                    stroke-linecap="round" stroke-dasharray="200" stroke-dashoffset="200" />
+                <defs>
+                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#5b8cbe" />
+                        <stop offset="100%" style="stop-color:#c9a95c" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <!-- ═══════════════ Navigation ═══════════════ -->
+    <nav>
+        <a href="#home" class="nav-logo">EC</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- ═══════════════ Home / Hero ═══════════════ -->
+    <section id="home">
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Elvis Chukwuemeka.</h1>
+        <p class="hero-title reveal">Frontend Web Developer &amp; IT Student</p>
+        <p class="hero-desc reveal">
+            I build <span id="typing-text"></span><span class="typing-cursor">|</span>
+        </p>
+        <div class="hero-buttons reveal">
+            <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-arrow-down"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+                <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- ═══════════════ About ═══════════════ -->
+    <section id="about">
+        <p class="section-label reveal">About</p>
+        <h2 class="section-title reveal">Who I Am</h2>
+        <p class="reveal">
+            I'm an Information Technology student with a passion for web development.
+            I enjoy building responsive websites and continuously improving my skills in frontend and backend
+            development.
+            My goal is to create websites that are both beautiful and functional.
+        </p>
+    </section>
+
+    <!-- ═══════════════ Skills ═══════════════ -->
+    <section id="skills">
+        <p class="section-label reveal">Skills</p>
+        <h2 class="section-title reveal">My Toolbox</h2>
+        <div class="skills-grid">
+
+            <!-- Frontend Card -->
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML5</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Card -->
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-server"></i> Backend</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Django</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="skill-card reveal">
+                <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+                <div class="skill-bars">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git & GitHub</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Figma</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ Projects ═══════════════ -->
+    <section id="projects">
+        <p class="section-label reveal">Projects</p>
+        <h2 class="section-title reveal">What I've Built</h2>
+        <div class="projects-grid">
+
+            <!-- AsictsVotes -->
+            <div class="project-card reveal">
+                <h3><i class="fa-solid fa-check-to-slot"></i> AsictsVotes</h3>
+                <p>Full-stack voting platform with React frontend and Django REST backend. Features real-time results,
+                    role-based access, and duplicate vote prevention.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">Django</span>
+                    <span class="project-tag">JWT</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                        Demo</a>
+                    <a href="https://github.com/elvis-xi/asictsvotes" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Xi Cars -->
+            <div class="project-card reveal">
+                <h3><i class="fa-solid fa-car"></i> Xi Cars</h3>
+                <p>Car rental and delivery website with a clean, user-friendly interface for browsing and booking
+                    vehicles.</p>
+                <div class="project-tags">
+                    <span class="project-tag">HTML</span>
+                    <span class="project-tag">CSS</span>
+                    <span class="project-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                        Demo</a>
+                    <a href="https://github.com/elvis-xi/XI-Cars" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="project-card reveal">
+                <h3><i class="fa-solid fa-folder-open"></i> Portfolio Website</h3>
+                <p>A responsive portfolio showcasing my work — the very site you're viewing now.</p>
+                <div class="project-tags">
+                    <span class="project-tag">React</span>
+                    <span class="project-tag">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                        Demo</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+            <!-- To-Do App -->
+            <div class="project-card reveal">
+                <h3><i class="fa-solid fa-list-check"></i> To-Do App</h3>
+                <p>Task management application with local storage for persistent data across sessions.</p>
+                <div class="project-tags">
+                    <span class="project-tag">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                        Demo</a>
+                    <a href="#" class="btn btn-secondary"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ Experience / Timeline ═══════════════ -->
+    <section id="experience">
+        <p class="section-label reveal">Experience</p>
+        <h2 class="section-title reveal">My Journey</h2>
+        <div class="timeline">
+
+            <!-- Timeline Item - Left -->
+            <div class="timeline-item left reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2024</span>
+                    <h3>Started Web Development</h3>
+                    <p>Began my journey into web development. Learned HTML, CSS, and JavaScript fundamentals. Built my
+                        first static websites and fell in love with turning ideas into code.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item - Right -->
+            <div class="timeline-item right reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2025</span>
+                    <h3>Built Xi Cars</h3>
+                    <p>Developed Xi Cars — a car rental and delivery website. Applied my frontend skills to create a
+                        clean, user-friendly interface for browsing and booking vehicles.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item - Left -->
+            <div class="timeline-item left reveal">
+                <div class="timeline-content">
+                    <span class="timeline-date">2026</span>
+                    <h3>Built AsictsVotes</h3>
+                    <p>Engineered a full-stack voting platform using React and Django REST. Implemented real-time
+                        results, role-based access control, and duplicate vote prevention. My most technically ambitious
+                        project to date.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <!-- Timeline Item - Right -->
+            <div class="timeline-item right reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Present</span>
+                    <h3>Expanding Full-Stack Skills</h3>
+                    <p>Deepening my expertise in Python and Django backend development while building more complex React
+                        applications. Open to internship and freelance opportunities.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ═══════════════ Education ═══════════════ -->
+    <section id="education">
+        <p class="section-label reveal">Education</p>
+        <h2 class="section-title reveal">My Academic Journey</h2>
+        <div class="edu-card reveal">
+            <h3><i class="fa-solid fa-building-columns"></i> Information Technology</h3>
+            <p class="edu-meta">Federal University of Technology Owerri • Expected Graduation: 2029</p>
+        </div>
+    </section>
+
+    <!-- ═══════════════ Certifications ═══════════════ -->
+    <section id="certifications">
+        <p class="section-label reveal">Certifications</p>
+        <h2 class="section-title reveal">What I've Earned</h2>
+        <ul class="cert-list">
+            <li class="reveal"><i class="fa-solid fa-certificate"></i> Responsive Web Design</li>
+            <li class="reveal"><i class="fa-solid fa-certificate"></i> JavaScript Algorithms</li>
+            <li class="reveal"><i class="fa-solid fa-certificate"></i> React Certification</li>
+        </ul>
+    </section>
+
+    <!-- ═══════════════ Contact ═══════════════ -->
+    <section id="contact">
+        <p class="section-label reveal">Contact</p>
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <div class="contact-links reveal">
+            <a href="elvischukwuemka234@gmail.com" class="contact-link">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/elvis-xi/" target="_blank" rel="noopener" class="contact-link">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://wa.me/2348137875977" target="_blank" rel="noopener" class="contact-link">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+        <form class="contact-form reveal" action="https://formspree.io/f/mgojrgpl" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Built with <i class="fa-solid fa-heart"></i> by Elvis Chukwuemeka &copy; 2026</p>
+    </footer>
+
+    <!-- ═══════════════ Scroll to Top ═══════════════ -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
